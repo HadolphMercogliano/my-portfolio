@@ -1,10 +1,23 @@
 <script>
+import AppMain from "./pages/AppMain.vue";
 export default {
-  data() {},
+  data() {
+    return {
+      title: "ciao",
+    };
+  },
+  components: { AppMain },
 };
 </script>
 <template>
-  <div></div>
+  <main>
+    <AppMain></AppMain>
+  </main>
 </template>
 
-<style lang="scss" scoped></style>
+<style lang="scss">
+main {
+  height: 100vh;
+  background-color: #a1ffe0;
+}
+</style>
